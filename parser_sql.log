@@ -1,0 +1,48 @@
+2019-02-28 11:24:58,046:__main__: ERROR : SQL Parsing error
+2019-02-28 11:26:38,603:__main__: ERROR : SQL Parsing error
+2019-02-28 11:40:37,447:__main__: ERROR : SQL Parsing error
+2019-02-28 11:41:58,566:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 11:41:58,566:root: INFO : String match error
+2019-02-28 11:41:58,567:__main__: ERROR : SQL Parsing error
+2019-02-28 12:43:07,180:__main__: ERROR : SQL Parsing error
+2019-02-28 12:43:52,786:__main__: ERROR : SQL Parsing error
+2019-02-28 16:47:17,449:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:47:17,450:root: INFO : String match error
+2019-02-28 16:47:17,450:__main__: ERROR : SQL Parsing error
+2019-02-28 16:47:47,176:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:47:47,176:root: INFO : String match error
+2019-02-28 16:47:47,176:__main__: ERROR : SQL Parsing error
+2019-02-28 16:48:22,820:__main__: ERROR : SQL Parsing error
+2019-02-28 16:49:00,302:__main__: ERROR : SQL Parsing error
+2019-02-28 16:49:33,121:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:49:33,121:root: INFO : String match error
+2019-02-28 16:49:33,121:__main__: ERROR : SQL Parsing error
+2019-02-28 16:51:30,819:__main__: ERROR : SQL Parsing error
+2019-02-28 16:52:38,236:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:52:38,237:root: INFO : String match error
+2019-02-28 16:52:38,237:__main__: ERROR : SQL Parsing error
+2019-02-28 16:52:53,985:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:52:53,985:root: INFO : String match error
+2019-02-28 16:52:53,985:__main__: ERROR : SQL Parsing error
+2019-02-28 16:53:43,641:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:53:43,641:root: INFO : String match error
+2019-02-28 16:53:43,641:__main__: ERROR : SQL Parsing error
+2019-02-28 16:53:55,657:__main__: ERROR : Cannot find string match from grammar
+2019-02-28 16:53:55,657:root: INFO : String match error
+2019-02-28 16:53:55,657:__main__: ERROR : SQL Parsing error
+2019-02-28 16:55:57,389:__main__: ERROR : SQL Parsing error
+2019-02-28 16:56:14,058:__main__: ERROR : SQL Parsing error
+2019-02-28 16:57:19,033:__main__: ERROR : SQL Parsing error
+2019-02-28 16:57:55,200:__main__: ERROR : SQL Parsing error
+2019-02-28 16:58:09,750:__main__: ERROR : SQL Parsing error
+2019-02-28 16:59:27,108:__main__: ERROR : SQL Parsing error
+2019-02-28 17:05:48,938:__main__: ERROR : SQL Parsing error
+2019-02-28 18:46:19,451:__main__: ERROR : SQL Parsing error
+2019-02-28 18:52:45,497:__main__: ERROR : SQL Parsing error
+2019-02-28 19:00:15,078:__main__: ERROR : SQL Parsing error
+2019-02-28 19:00:29,097:__main__: ERROR : SQL Parsing error
+2019-03-07 17:50:32,481:__main__: INFO : [Tree(S[SEM=(BREAK_S SELECT *, (employees.emp_no), dept_emp.dept_no BREAK_F FROM employees)], [Tree(NP[SEM=(BREAK_S SELECT *)], [Tree(Det_2[SEM='BREAK_S SELECT *'], ['Who'])]), Tree(VP[SEM='(employees.emp_no), dept_emp.dept_no BREAK_F FROM employees'], [Tree(Dep_v[SEM='(employees.emp_no), dept_emp.dept_no BREAK_F FROM employees'], ['employees'])])]), Tree(S[SEM=(BREAK_S SELECT *, BREAK_F FROM employees)], [Tree(NP[SEM=(BREAK_S SELECT *)], [Tree(Det_2[SEM='BREAK_S SELECT *'], ['Who'])]), Tree(VP[SEM='BREAK_F FROM employees'], [Tree(V[SEM='BREAK_F FROM employees'], ['employees'])])])]
+2019-03-07 17:50:32,489:__main__: INFO : [Tree(S[SEM=(BREAK_S SELECT *, (employees.emp_no), dept_emp.dept_no BREAK_F FROM employees)], [Tree(NP[SEM=(BREAK_S SELECT *)], [Tree(Det_2[SEM='BREAK_S SELECT *'], ['Who'])]), Tree(VP[SEM='(employees.emp_no), dept_emp.dept_no BREAK_F FROM employees'], [Tree(Dep_v[SEM='(employees.emp_no), dept_emp.dept_no BREAK_F FROM employees'], ['employees'])])]), Tree(S[SEM=(BREAK_S SELECT *, BREAK_F FROM employees)], [Tree(NP[SEM=(BREAK_S SELECT *)], [Tree(Det_2[SEM='BREAK_S SELECT *'], ['Who'])]), Tree(VP[SEM='BREAK_F FROM employees'], [Tree(V[SEM='BREAK_F FROM employees'], ['employees'])])])]
+2019-03-07 18:06:02,898:__main__: INFO : Converting input to MySQL query...
+2019-03-07 18:06:08,963:__main__: INFO : Generating parse tree
+2019-03-07 18:06:08,964:__main__: ERROR : Failed to generate parse tree. Error: local variable 'sent' referenced before assignment
