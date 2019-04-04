@@ -1,9 +1,9 @@
-import config
+import db_config
 import MySQLdb
 
 class DB():
     def __init__(self):
-        self.db = MySQLdb.connect(**config.db_config)    
+        self.db = MySQLdb.connect(**db_config.db_config)    
     def query(self, sql_query):
         cur = self.db.cursor()
         cur.execute(sql_query)

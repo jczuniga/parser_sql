@@ -1,6 +1,6 @@
 db_config = {
         'user': 'jc',
-        'passwd': '#######',
+        'passwd': 'Qwerty12!@',
         'host': 'localhost',   
         'db': 'world',
     }
