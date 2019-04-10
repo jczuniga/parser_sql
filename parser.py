@@ -91,6 +91,10 @@ def parse_query(query, *args, **kwargs):
     output = ""
     parsed = parse_sentence(parser_grammar, query)
     parsed = re.sub(r"\) \(", "), (", parsed)
+    parsed = re.sub(r"N \(", "N(", parsed)
+    parsed = re.sub(r"X \(", "X(", parsed)
+    parsed = re.sub(r"G \(", "G(", parsed)
+    parsed = re.sub(r"\) M", "), M", parsed)
     digits = get_digits_from_query(query)
     if digits is not None:
         if len(digits) > 1:
@@ -130,7 +134,7 @@ def main():
     print 'Generating parse tree...'
     time.sleep(3)
     try:
-        show_parse_tree(parser_grammar, user_input)
+        show_parse_tree(user_input)
     except ValueError as e:
         log.error("Could not generate parse tree. Error: {}".format(e))
 
