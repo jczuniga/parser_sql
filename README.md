@@ -1,5 +1,5 @@
 
-SQL Parser using Natural Language Processing (NLP)
+# SQL Parser using Natural Language Processing (NLP) #
 Machine Project: PROGLAN & Databases (CIS204M)
 
 Requirements:
