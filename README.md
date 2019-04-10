@@ -16,7 +16,7 @@ MySQL
 Note: Nested Queries are not supported
 
 Base Form
-<pre> SELECT (Columns names)* FROM (Table names)* </pre>
+<code> SELECT (Columns names)* FROM (Table names)* <code>
 
 ## WHERE Form
 # SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ]
