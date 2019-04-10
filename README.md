@@ -1,6 +1,6 @@
 
 # SQL Parser using Natural Language Processing (NLP) #
-Machine Project: PROGLAN & Databases (CIS204M)
+<Code> Machine Project: PROGLAN & Databases (CIS204M)
 
 Requirements:
 - Python2, PyPI('pip'), MySQL client for Python
@@ -13,7 +13,7 @@ Instructions:
 4) For test cases, run test module ('test_terminal.py')
 
 MySQL
-Note: Nested Queries are not supported
+Note: Nested Queries are not supported </Code>
 
 Base Form
 <code> SELECT (Columns names)* FROM (Table names)* </code>
