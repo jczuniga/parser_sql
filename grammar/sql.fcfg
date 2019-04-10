@@ -5719,44 +5719,4 @@ Language_name[SEM="Language='Ndebele'"] ->'Ndebele'
 Language_name[SEM="Language='Nyanja'"] ->'Nyanja'
 Language_name[SEM="Language='Shona'"] ->'Shona'
 
-
-
-
-################################################################################################################
-#                       Comments
-################################################################################################################
-## MySQL
-## Note: Nested Queries are not supported
-
-
-## Base Form
-# SELECT (Columns names)* FROM (Table names)*
-
-## WHERE Form
-# SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ]
-
-## Average Form
-# SELECT AVG( (Column name) )(Columns names)* FROM (Table names)*
-# SELECT AVG( (Column name) )(Columns names)* FROM (Table names)* [WHERE [Conditions] ] ...
-
-
-## GROUP By Forms
-# SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ] [GROUP BY (Colmns name)]
-# SELECT (Columns names)* FROM (Table names)* [GROUP BY (Colmns name)]
-
-## ORDER BY Forms
-# SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ] [ORDER BY (Colmns name) (ASC/DESC)]
-# SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ] [GROUP BY (Colmns name)] [ORDER BY (Colmns name) (ASC/DESC)]
-
-# SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ] [GROUP BY (Colmns name)] [ORDER BY (Colmns name) (ASC/DESC)]
-
-
-###############################
-### Conditions
-
-# Col_name (> , =>, <, <=, =) value
-# Col_name (> , =>, <, <=, =) value (AND/OR) Col_name (> , =>, <, <=, =) value
-
-#  Col_name LIKE value
-
-#  Col_name IN (value, value, ...)
+###### End of Grammar ######
