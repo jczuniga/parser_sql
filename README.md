@@ -12,11 +12,11 @@ Instructions:
 3) Run main module from command line ('python main.py') - with GUI
 4) For test cases, run test module ('test_terminal.py')
 
-## MySQL
-## Note: Nested Queries are not supported
+MySQL
+Note: Nested Queries are not supported
 
-## Base Form
-# SELECT (Columns names)* FROM (Table names)*
+Base Form
+<pre> SELECT (Columns names)* FROM (Table names)* </pre>
 
 ## WHERE Form
 # SELECT (Columns names)* FROM (Table names)* [WHERE [Conditions] ]
