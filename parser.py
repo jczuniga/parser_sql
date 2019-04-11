@@ -5,6 +5,7 @@ import logging
 import time
 import re
 import sys
+from sql_connect import DB
 
 file_handler = logging.FileHandler(filename='parser_sql.log')
 stdout_handler = logging.StreamHandler(sys.stdout)
@@ -79,9 +80,9 @@ def is_question(sent):
 # Method that gets/scans user query from terminal
 def get_query():
     try:
-        user_query = raw_input("[SQL_DB] [world.db] [root] Enter your query: ")
+        user_query = raw_input("[SQL_DB] [world.db] [root] Enter your query (Type 'quit' or 'q' to close program): ")
     except NameError:
-        user_query = input("[SQL_DB] [world.db] [root] Enter your query: ")
+        user_query = input("[SQL_DB] [world.db] [root] Enter your query (Type 'quit' or 'q' to close program): ")
 
     return str(user_query)
 
@@ -125,18 +126,31 @@ def show_parse_tree(input, trace=0):
 
 
 def main():
-    user_input = get_query()
-    print 'Converting input to MySQL query...'
-    time.sleep(3)
-    get_parse = parse_query(user_input)
-    print "Result: {}".format(get_parse)
-    time.sleep(3)
-    print 'Generating parse tree...'
-    time.sleep(3)
-    try:
-        show_parse_tree(user_input)
-    except ValueError as e:
-        log.error("Could not generate parse tree. Error: {}".format(e))
+    database = DB()
+    while True:
+        user_input = get_query()
+        if user_input == 'quit' or user_input == 'q':
+            log.info('Exiting....')
+            time.sleep(3)
+            sys.exit(0)
+        else:
+            log.info('Converting input to MySQL query...')
+            time.sleep(3)
+            try:
+                get_parse = parse_query(user_input)
+                log.info("Result: {}".format(get_parse))
+                time.sleep(3)
+                log.info('Generating parse tree...')
+                time.sleep(5)
+                show_parse_tree(user_input)
+                log.info('Retrieving results from database...')
+                time.sleep(5)
+                result = database.query_pretty(get_parse)
+                log.info(result)
+            except Exception as e:
+                log.error("Could not generate MySQL query and parse tree. Error: {}".format(e))
+                continue
+
 
 if __name__ == '__main__':
     main()

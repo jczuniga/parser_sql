@@ -9,8 +9,8 @@ Instructions:
 
 1) Clone repository 
 2) Install dependencies. Run 'pip install -r requirements.txt' from directory
-3) Run main module from command line ('python main.py') - with GUI
-4) For test cases, run test module ('test_terminal.py')
+3) To run with GUI Chatbot, execute <code> main.py </code>
+4) To run program in command line interface (CLI), execute <code> parser.py </code>
 
 MySQL
 Note: Nested Queries are not supported </Code>
